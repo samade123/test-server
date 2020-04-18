@@ -1,0 +1,45 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+	html{
+		// background: red;
+	}
+
+	main{
+
+		header{
+
+		}
+
+		footer{
+
+		}
+
+		#page-root{
+
+		}
+
+		#page-success{
+
+		}
+	}
+}
+
+
+@media only screen and (max-width: 340px) {
+	main{
+
+		header{
+
+
+		}
+
+		#page-root{
+
+		}
+
+		#page-success{
+
+		}
+	}
+}

@@ -1,0 +1,84 @@
+@import "normalize";
+@import "variables";
+
+$fa-font-path: "../fonts";
+
+@import "~@fortawesome/fontawesome-pro/scss/fontawesome";
+@import "~@fortawesome/fontawesome-pro/scss/solid";
+@import "~@fortawesome/fontawesome-pro/scss/regular";
+@import "~@fortawesome/fontawesome-pro/scss/light";
+@import "~@fortawesome/fontawesome-pro/scss/brands";
+
+body,
+html {
+    box-sizing: border-box;
+
+    color: #fff;
+    font-family: site;
+
+    height: 100%;
+    width: 100%;
+}
+
+html {
+    background-size: cover;
+    background-color: #000;
+    /* background-image: url(../images/); */
+}
+
+main {
+    position: relative;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+    width: 100%;
+    // max-width: 1300px;
+
+    // padding: 0 30px 30px 30px;
+    margin: auto;
+
+    &[v-cloak] {
+        display: none;
+    }
+
+    .page {
+        flex-grow: 1;
+    }
+}
+
+header {
+    position: relative;
+	display: flex !important;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	margin: auto;
+	border: none;
+
+	flex-shrink: 0;
+	
+	padding: 7px;
+
+    .header-logo {
+        height: 100px;
+    }
+}
+
+footer {
+    box-sizing: border-box;
+}
+
+#page-success {
+    height: 100%;
+}
+
+#page-notfound {
+}
+
+#page-root {
+}
+
+@import "mobile";
+@import "control/control.scss";

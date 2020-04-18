@@ -1,0 +1,143 @@
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
+
+
+// Large devices (desktops, 992px and up)
+@media (max-width: 768px) {
+
+    .sidebar{
+        width:$sidebar-width-collapse;
+
+        header{
+            .sidebar-logo{
+                display: none;
+            }
+
+            .sidebar-icon{
+                display: inline-block;
+            }
+        }
+
+        .sidebar-list{
+
+
+            h2{
+                padding:5px 0;
+
+                font-size: .7em;
+                text-align: center;
+            }
+
+            &>ul{
+                &>li{
+                    text-align: center;
+
+                    &.sidebar-list-active{
+
+                        background:$primary-color;
+
+                        i{
+                            color: $sidebar-list-item;
+                        }
+
+                        &>a{
+                            border-left:none;
+                        }
+                    }
+
+                    &:hover{
+                        &>a{
+                            border-left:none;
+                        }
+                    }
+
+
+                    &>a{
+                        padding:12px 5px;
+
+                        border-left:none;
+                    }
+
+                    .sidebar-icon{
+                        font-size: 2.5em;
+                    }
+
+                    .sidebar-item-title{
+                        display: block;
+
+                        margin-top:5px;
+
+                        font-size: .7em;
+                    }
+
+                    ul{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    main{
+        left:$sidebar-width-collapse;
+    }
+
+}
+
+// phones and below
+@media (max-width: 576px) {
+    main{
+        &>header{
+            padding-right:10px;
+
+            .header-title{
+                max-width:100%;
+            }
+
+            #header-user{
+                display: none;
+            }
+        }
+    }
+
+    //invert sidebar-hide class function on smallets displays
+
+    .sidebar{
+        display: none;
+    }
+
+    main{
+        left:0;
+        // transition: left 0s;
+    }
+
+
+    body.sidebar-hide{
+        .sidebar{
+            display: inline-block;
+        }
+
+        main{
+            left:$sidebar-width-collapse;
+        }
+    }
+
+}

@@ -1,0 +1,15 @@
+#user-panel-row{
+
+    height:calc(100% - 200px);
+    max-height:calc(100% - 200px);
+    min-height:400px;
+
+    &>div, .panel, .panel-body, #user-table{
+        height:100%;
+    }
+
+    .panel-collapse{
+        height:calc(100% - 45px);
+    }
+
+}
